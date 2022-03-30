@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Sorting Algorithm Visualizer</title>
+</head>
+<body>
+    <header>
+        <div id="heading">
+            <h1>Sorting Visualizer</h1>
+        </div>
+        
+        <nav>
+            <div class="navbar">
+
+                <div class="newArrayBtn">
+                    <a href="#" class="newArray">Create New Array</a>
+                </div>
+    
+                <div class="sliders">
+                    <div>
+                        <ul id="size">
+                            <li>
+                                <h4>Size</h4>
+                            </li>
+                            <li>
+                                <input id="arraySize" type="range" min="5" max="100" step=1 value=40>
+                            </li>
+                        </ul>
+                    </div>
+                   <div>
+                        <ul id="speed">
+                            <li>
+                                <h4>Speed</h4>
+                            </li>
+                            <li>
+                                <input id="sortingSpeed" type="range" min="20" max="300" stepDown=10 value=60>
+                            </li>
+                        </ul>
+                   </div>
+                </div>
+
+                <div class="algorithms">
+                    <ul>
+                        <div class="algo-btns">
+                            
+                            <a href="#" id="btn1">Bubble Sort</a>
+                            <a href="#" id="btn2">Selection Sort</a>
+                            <a href="#" id="btn3">Insertion Sort</a>
+                            <a href="#" id="btn4">Quick Sort</a>
+                            <a href="#" id="btn5">Merge Sort</a>
+
+                        </div>
+                    </ul>
+                </div>
+    
+            </div>
+        </nav>
+
+    </header>
+
+    <div id="bars" class="flex-container"></div>
+    
+    
+    <script src="JS_files/main.js"></script>
+    <script src="JS_files/bubble_sort.js"></script>
+    <script src="JS_files/selection_sort.js"></script>
+    <script src="JS_files/insertion_sort.js"></script>
+    <script src="JS_files/merge_sort.js"></script>
+    <script src="JS_files/quick_sort.js"></script>
+
+</body>
+</html>
